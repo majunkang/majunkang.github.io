@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">{{ site.title }}</a>
+    </div>
+
+    <div>
+      <ul class="nav navbar-nav">
+
+        <li {% if page.title == "Home" %}class="active"{% endif %} >
+          <a href="{{"/" | prepend: site.baseurl }}">Home</a>
+        </li>
+        
+        <!--li {% if page.title == "Blog" %}class="active"{% endif %}>
+          <a href="{{"/blog/" | prepend: site.baseurl }}">Blog</a>
+        </li-->
+        
+        <li {% if page.title == "Bookmarks" %}class="active"{% endif %}>
+          <a href="{{"/bookmarks/" | prepend: site.baseurl }}">Bookmarks</a>
+        </li>
+      
+      </ul>
+    </div>
+
+  </div>
+</nav>
