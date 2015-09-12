@@ -5,7 +5,7 @@ date: 2015-09-12 17:19:48
 categories: blog
 ---
 
-### 让`<p>` 的 "user agent stylesheet" css
+### `<p>` 的 "user agent stylesheet" css
 在用 Google Chrome "Inspect Element" 查看 html 的时候，发现html的tag, 如 `<p>`，带有一个名为 'user agent stylesheet'的 css, 显示如下。
 
 
