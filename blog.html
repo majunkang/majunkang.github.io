@@ -12,19 +12,13 @@ permalink: /blog/
                   
             <div class="blog-post">
 
-                <h2>
-                    <a class="blog-post-title" href="{{ post.url | prepend: site.baseurl }}">
-                     {{ post.title }} 
-                    </a>
-                </h2>
+                <a class="blog-post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <p class="blog-post-meta"> {{ post.date | date: "%b %-d, %Y" }} by <a href="#">Eric Ma</a></p>
 
-                                {{ post.excerpt }}
+                <div >{{ post.excerpt }}</div>
                 
-                <p>
-                    <a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a>
-                </p>
-
+                <p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p>
+                <hr />
             </div>
                 
             {% endfor %}
