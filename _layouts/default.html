@@ -3,11 +3,13 @@
 
     {% include head.html %}
 
-    <body>
+    <body style="background:#eee;">
         {% include nav.html %}
 
         	<div class="container">
-            {{ content }}
+        		<div class="row">
+            		{{ content }}
+            	</div>
         	</div>
         {% include footer.html %}
     </body>

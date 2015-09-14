@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="blog-main col-sm-8">
-			<div class="blog-post-title">{{page.title}} </div>          
-            {{ content }}
+	<div class="col-sm-8 blog-main">
+		<div class="blog-post">
+			<div class="blog-post-title">{{page.title}} </div>
+			<p class="blog-post-meta"> {{ page.date | date: "%b %-d, %Y" }}</p>
+			<div>{{ content }}</div>
+		</div>
 	</div>
-</div>

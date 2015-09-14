@@ -4,13 +4,12 @@ title: Blog
 permalink: /blog/
 ---
 
-    <div class="row">
         
         <div class="col-sm-8 blog-main">
 
             {% for post in site.categories['blog'] %}
                   
-            <div class="blog-post">
+            <div class="blog-excerpt">
 
                 <a class="blog-post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 <p class="blog-post-meta"> {{ post.date | date: "%b %-d, %Y" }} by <a href="#">Eric Ma</a></p>
@@ -18,18 +17,16 @@ permalink: /blog/
                 <div >{{ post.excerpt }}</div>
                 
                 <p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p>
-                <hr />
             </div>
                 
             {% endfor %}
 
         </div>
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <!--div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <h4>Categories</h4>
             <p></p>
           </div>
-        </div>
+        </div-->
         
-    </div>
