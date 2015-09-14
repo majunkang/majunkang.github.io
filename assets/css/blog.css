@@ -137,9 +137,7 @@ h6, .h6 {
  * Blog posts
  */
 
-.blog-post {
-  margin-bottom: 60px;
-}
+
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
@@ -147,6 +145,24 @@ h6, .h6 {
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  font-size: 18px;
+  background-color: #fff;
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #888888;
+}
+
+.blog-excerpt {
+  margin-bottom: 20px;
+  font-size: 18px;
+  background-color: #fff;
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #888888;
 }
 
 
@@ -165,11 +181,11 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-h2 a.blog-post-title {
+a.blog-post-title {
   text-decoration:none;
   color:#4C4C4C;
 }
 
-h2 a.blog-post-title:hover {
+a.blog-post-title:hover {
   color:#2970A6;
 }
