@@ -189,3 +189,19 @@ a.blog-post-title {
 a.blog-post-title:hover {
   color:#2970A6;
 }
+
+@media (min-width: 768px) {
+
+  body {
+    padding-top: 70px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar-fixed-top {
+    position: static;
+  }
+}
+
