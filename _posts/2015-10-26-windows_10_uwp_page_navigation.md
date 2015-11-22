@@ -9,10 +9,7 @@ Summarized Page Navigation Behavior Logic, through testing in Windows 10 UWP App
 
 <!--more-->
 
-<br> 
-
 ### Navigation Test Cases
----
 
 **Page1 Navigate to Page2**
 
@@ -26,8 +23,6 @@ Call Frame.Navigate(typeof(Page2)), the below events will happen:
   SourcePageType will always be Destination Page (Page2)  
   NavigationMode will always be New  
 
-<br/>
-
 **Page2 GoBack to Page1**
 
 Current Page is Page2.  
@@ -40,7 +35,6 @@ Call Frame.GoBack(), the below events will happen.
 SourcePageType will always be Destination Page (Page1)  
 NavigationMode will always be Back
 
-<br/>
 **Page1 GoForward to Page2**
 
 Current Page is Page2.  
@@ -53,10 +47,7 @@ Call Frame.GoBack(), the below events will happen.
 SourcePageType will always be Destination Page (Page2)  
 NavigationMode will always be Forward
 
-<br/>  
-
 ### Conclusion  
----
 
 When Navigating between StartPage and Destination Page, Navigation Callback sequences will be:
 
@@ -66,7 +57,7 @@ When Navigating between StartPage and Destination Page, Navigation Callback sequ
 
 After StartPage.OnNavigatingFrom return, Before StartPage.OnNavigatedTo is called, things will happen:
 
->    1. New Instance of DestinationPage is created, **if DestinationPage has not been cached**(See Page.Destination.NavigationCacheMode); Otherwise, cached Instance will be reused.   
+>    1. New Instance of DestinationPage is created, **if DestinationPage has not been cached**(See Page.NavigationCacheMode); Otherwise, cached Instance will be reused(No matter New/Back/Forward!!!). (Page Cache is done when a page is put to BackStack/ForwardStack)   
 >    2. Change Frame.Content from StartPage to DestinationPage;  
 >    3. StartPage.Parent will be set to null
 

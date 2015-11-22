@@ -8,7 +8,6 @@ categories: blog
 ### `<p>` 的 "user agent stylesheet" css
 在用 Google Chrome "Inspect Element" 查看 html 的时候，发现html的tag, 如 `<p>`，带有一个名为 'user agent stylesheet'的 css, 显示如下。
 
-
 {% highlight css %}
 p {  
 	display: block;  
@@ -20,8 +19,6 @@ p {
 {% endhighlight %}
 
 正是浏览器对`<p>`设置的默认css定义了`<p>`的显示特性（"block", 段落前后的距离）
-
-<hr />
 
 ### 让`<span>` 显示效果和 `<p>`一样
 
