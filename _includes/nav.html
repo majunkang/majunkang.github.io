@@ -1,27 +1,20 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">{{ site.title }}</a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">{{ site.title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div>
-      <ul class="nav navbar-nav">
-
-        <li {% if page.title == "Home" %}class="active"{% endif %} >
-          <a href="{{"/" | prepend: site.baseurl }}">Home</a>
-        </li>
-        
-        <li {% if page.title == "Blog" %}class="active"{% endif %}>
-          <a href="{{"/blog/" | prepend: site.baseurl }}">Blog</a>
-        </li>
-        
-        <li {% if page.title == "Bookmarks" %}class="active"{% endif %}>
-          <a href="{{"/bookmarks/" | prepend: site.baseurl }}">Bookmarks</a>
-        </li>
-      
-      </ul>
-    </div>
-
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href={{ "/" | prepend: site.baseurl }}>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href={{ "/blog/" | prepend: site.baseurl }}>Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href={{ "/bookmarks/" | prepend: site.baseurl }}>Bookmarks</a>
+      </li>
+    </ul>
   </div>
 </nav>
